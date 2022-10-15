@@ -1989,7 +1989,9 @@ console.log(copyPerson.hasOwnProperty('score'))
 ##### Exercises: Level 2
 
 1. Find the person who has many skills in the users object.
-1. Count logged in users,count users having greater than equal to 50 points from the following object.
+2. Count logged in users,count users having greater than equal to 50 points from the following object.
+Solution : Object.entries(users).filter((usr)=>usr[1].skills.length>4)
+Object.entries(users).filter((usr)=>usr[1].isLoggedIn)
 
    ````js
    const users = {
